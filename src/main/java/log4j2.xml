@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="WARN">
+<Appenders>
+<Console name="CONSOLE" target="SYSTEM_OUT">
+    <PatternLayout
+        pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n" />
+</Console>
+</Appenders>
+<Loggers>
+<Root level="debug">
+    <AppenderRef ref="CONSOLE" />
+</Root>
+<logger level="info" additivity="false" name="org.springframework.security">
+    <AppenderRef ref="CONSOLE" />
+</logger>
+<logger level="info" additivity="false" name="org.springframework.web">
+    <AppenderRef ref="CONSOLE" />
+</logger>
+<logger level="warn" additivity="false" name="controllers">
+    <AppenderRef ref="CONSOLE" />
+</logger>
+</Loggers>
+</Configuration>

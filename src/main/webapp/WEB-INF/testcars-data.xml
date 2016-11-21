@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:jdbc="http://www.springframework.org/schema/jdbc"
+       xmlns:neo4j="http://www.springframework.org/schema/data/neo4j"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans-3.1.xsd
+       http://www.springframework.org/schema/jdbc
+       http://www.springframework.org/schema/jdbc/spring-jdbc-3.1.xsd
+       http://www.springframework.org/schema/data/neo4j
+       http://www.springframework.org/schema/data/neo4j/spring-neo4j.xsd"
+       >
+	<!--
+	<jdbc:initialize-database>
+    	<jdbc:script location="classpath:import.sql"/>
+    </jdbc:initialize-database>
+	-->
+
+<!-- 
+	<bean id="transactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+    <property name="dataSource" ref="dataSource"/>
+</bean>
+
+	<bean id="dataSource"
+			class="org.apache.commons.dbcp.BasicDataSource">
+		<property name="driverClassName" value="org.neo4j.jdbc.Driver" />
+		<property name="url" value="jdbc:neo4j://localhost:7474/?debug=true" />
+		<property name="initialSize" value="2" />
+		<property name="maxActive" value="5" />
+		 
+		<property name="testOnBorrow" value="true" />
+		<property name="validationQuery" value="select 1" />
+		
+	</bean>
+       -->
+       
+</beans>

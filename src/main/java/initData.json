@@ -1,0 +1,50 @@
+[{
+                "name": "Teet",
+                "phoneNo": "Järveküla",
+                "cars": [{
+                               "make": "Lada",
+                               "model": "2101",
+                               "numberplate": "123ASD"
+                }, {
+                               "make": "Kia",
+                               "model": "Sorento",
+                               "numberplate": "534TTT"
+                }]
+ 
+}, {
+                "name": "Pille",
+                "phoneNo": "Purk",
+                "cars": [{
+                               "make": "Skoda",
+                               "model": "Octavia",
+                               "numberplate": "999GLF"
+                }, {
+                               "make": "Kia",
+                               "model": "Sorento",
+                               "numberplate": "555TFF"
+                }]
+}, {
+                "name": "Mati",
+                "phoneNo": "Kaal",
+                "cars": [{
+                               "make": "Lada",
+                               "model": "2101",
+                               "numberplate": "445KKK"
+                }, {
+                               "make": "Audi",
+                               "model": "A6",
+                               "numberplate": "997HHH"
+                }]
+}, {
+                "name": "Külli",
+                "phoneNo": "Kukk",
+                "cars": [{
+                               "make": "BMW",
+                               "model": "760",
+                               "numberplate": "444RRR"
+                }, {
+                               "make": "Audi",
+                               "model": "A6",
+                               "numberplate": "876OUI"
+                }]
+}]
