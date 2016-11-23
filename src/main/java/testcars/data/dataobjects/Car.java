@@ -1,14 +1,12 @@
 package testcars.data.dataobjects;
 
-import com.fasterxml.jackson.annotation.JsonIdentityInfo;
-import com.fasterxml.jackson.annotation.ObjectIdGenerators;
-
+import com.fasterxml.jackson.annotation.JsonIdentityReference;
 public class Car extends BaseObject {
 
 	private String make;
 	private String model;
 	private String numberplate;
-	@JsonIdentityInfo(generator=ObjectIdGenerators.IntSequenceGenerator.class, property="@id")
+	@JsonIdentityReference(alwaysAsId = true)
 	private User user;
 	public String getMake() {
 		return make;
