@@ -1,5 +1,6 @@
 package testcars.data.dataobjects;
 
+import java.util.HashSet;
 import java.util.Set;
 
 import com.fasterxml.jackson.annotation.JsonIdentityInfo;
@@ -10,6 +11,9 @@ public class User extends BaseObject {
 	private String name;
 	private String phoneNo;
 	private Set<Car> cars;
+	public User() {
+		this.cars = new HashSet<>();
+	}
 	public Set<Car> getCars() {
 		return cars;
 	}
