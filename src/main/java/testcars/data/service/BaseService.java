@@ -64,7 +64,7 @@ public abstract class BaseService<T extends BaseObject> implements Service<T> {
 			}
 		}
 	}
-	public List<T> filterBySubObject(List<T> list, String filter) throws IllegalAccessException, InvocationTargetException, NoSuchMethodException, NoSuchFieldException, SecurityException, InstantiationException {
+	public List<T> filterSubObjects(List<T> list, String filter) throws IllegalAccessException, InvocationTargetException, NoSuchMethodException, NoSuchFieldException, SecurityException, InstantiationException {
 		List<T> results = new ArrayList<>();
 		for (T oOriginal: list) {
 			T o = (T) oOriginal.getClass().newInstance();

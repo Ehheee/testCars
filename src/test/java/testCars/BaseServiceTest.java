@@ -62,7 +62,7 @@ public class BaseServiceTest {
 		List<User> users = userService.find("Pille");
 		assertThat(userService.get(users.get(0).getId()), equalTo(users.get(0)));
 		assertThat(users.get(0).getCars().size(), equalTo(2));
-		List<User> filteredUsers = userService.filterBySubObject(users, "Kia");
+		List<User> filteredUsers = userService.filterSubObjects(users, "Kia");
 		assertThat(1, equalTo(filteredUsers.size()));
 		assertThat(filteredUsers.get(0).getCars().size(), equalTo(1));
 	}

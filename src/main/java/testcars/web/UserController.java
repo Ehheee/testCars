@@ -27,7 +27,7 @@ public class UserController extends BaseController<User> {
 	public Object getUsers(@RequestParam(value = "find", required = false) String search,
 						   @RequestParam(value = "sort", required = false) String sort,
 						   @RequestParam(value = "filter", required = false) String filter) 
-						   throws IllegalAccessException, InvocationTargetException, NoSuchMethodException, IllegalArgumentException, NoSuchFieldException, SecurityException {
+						   throws IllegalAccessException, InvocationTargetException, NoSuchMethodException, IllegalArgumentException, NoSuchFieldException, SecurityException, InstantiationException {
 		return this.processListRequest(search, sort, filter);
 	}
 	@Autowired

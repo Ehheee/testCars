@@ -11,4 +11,5 @@ public interface Service<T extends BaseObject> {
 	public List<T> find(String search)  throws IllegalAccessException, InvocationTargetException, NoSuchMethodException, IllegalArgumentException, NoSuchFieldException, SecurityException;
 	public T get(Long id);
 	public void sort(String type, String field, List<T> list);
+	public List<T> filterSubObjects(List<T> list, String filter) throws IllegalAccessException, InvocationTargetException, NoSuchMethodException, NoSuchFieldException, SecurityException, InstantiationException;
 }
